@@ -39,11 +39,10 @@ SELECT lastname,firstname FROM wizard WHERE lastname LIKE "potter" ORDER BY firs
 
 
 
-mysql> SELECT firstname,lastname,birthday FROM wizard ORDER BY birthday ASC LIMIT 1,1;
-+-----------+----------+------------+
-| firstname | lastname | birthday   |
-+-----------+----------+------------+
-| tom       | jédusor  | 1926-12-31 |
-+-----------+----------+------------+
-1 row in set (0.00 sec)
+mysql> SELECT firstname,lastname,birthday FROM wizard ORDER BY birthday ASC LIMIT 0,1;
++-----------+------------+------------+
+| firstname | lastname   | birthday   |
++-----------+------------+------------+
+| albus     | dumbledore | 1881-07-01 |
++-----------+------------+------------+
 
